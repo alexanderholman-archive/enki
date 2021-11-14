@@ -1,0 +1,29 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          Dear @${{ github.actor }},
+
+          thank you for submitting your first issue. At present this project is unsupported, however I shall endevour to respond as soon as I am able.
+
+          Please ensure you have submitted any information you can in relation to this new issue.
+
+          Kind regards,
+
+          [Alex](https://github.com/alexanderholman), [alexander@holman.email](mailto:alexander@holman.email)
+        pr-message: |
+          Dear @{{ github.actor }},
+
+          I cannot thank you enoughfor your efforts. I shall endevour to review this PR as soon as possible.
+
+          Kind regards,
+
+          [Alex](https://github.com/alexanderholman), [alexander@holman.email](mailto:alexander@holman.email)

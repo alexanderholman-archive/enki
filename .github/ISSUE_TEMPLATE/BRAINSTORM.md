@@ -7,7 +7,7 @@ assignees: ''
 ---
 
 # Attention
-**If you are reporting a security vulnerability, do NOT open an issue. Instead, please send an email to [security@holman.email](mailto:security@holman.email). Thank you.**
+**If you are reporting a security vulnerability, do NOT open an issue. Instead, please email [security@holman.email](mailto:security@holman.email). Thank you.**
 
 ## Description
 **What are you thinking about?**
